@@ -93,14 +93,6 @@ session")
     -   **Content Type**: `JSON`
     -   **Body Parameters (RAW JSON)**:
         In the **RAW JSON** body, use values from the Webhook:
-        -   `model`: `openai/gpt-oss-20b`
-        -   `stream`: `false`
-        -   `temperature`: `{{$json.query.temperature || 0.7}}`
-        -   `messages`:
-            -   **System**: "You respond in English, concisely and
-                without inappropriate language."
-            -   **User**: "Tell a short, clean joke on the topic:
-                `<topic taken from the previous step>`
 
 **TIP:** Ensure that in **n8n** you have the environment variable
 `GROQ_API_KEY` configured. Never paste the key directly into the node.
